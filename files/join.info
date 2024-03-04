@@ -77,4 +77,4 @@ Then you can join any number of worker nodes by running the following on each as
 kubeadm join 192.168.56.221:6443 --token emtcio.8sqgpqydzdarywws \
 	--discovery-token-ca-cert-hash sha256:c0ad50d00e494d1205d42fa4befd424fd7c6c68d73301932c3ddaa5576cafa6b 
 
-kubeadm join 192.168.56.221:6443 --token emtcio.8sqgpqydzdarywws --discovery-token-ca-cert-hash sha256:c0ad50d00e494d1205d42fa4befd424fd7c6c68d73301932c3ddaa5576cafa6b 
+sudo kubeadm join 192.168.56.221:6443 --token emtcio.8sqgpqydzdarywws --discovery-token-ca-cert-hash sha256:c0ad50d00e494d1205d42fa4befd424fd7c6c68d73301932c3ddaa5576cafa6b 
