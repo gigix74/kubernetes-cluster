@@ -1,0 +1,42 @@
+---
+- box:
+    vb: "generic/ubuntu2204"
+  name: master01
+  nested: false
+  nics:
+    - type: "private_network"
+      ip_addr: "192.168.56.221"
+  ram: "8096"
+  sync_disabled: false
+  vcpu: "8"
+  provision:
+    - type: shell
+      path: "provision/setup.sh"
+    # - type: shell
+    #   path: "provision/init.sh"
+- box:
+    vb: "generic/ubuntu2204"
+  name: worker01
+  nested: false
+  nics:
+    - type: "private_network"
+      ip_addr: "192.168.56.231"
+  ram: "8096"
+  sync_disabled: false
+  vcpu: "8"
+  provision:
+    - type: shell
+      path: "provision/setup.sh"
+- box:
+    vb: "generic/ubuntu2204"
+  name: worker02
+  nested: false
+  nics:
+    - type: "private_network"
+      ip_addr: "192.168.56.232"
+  ram: "8096"
+  sync_disabled: false
+  vcpu: "8"
+  provision:
+    - type: shell
+      path: "provision/setup.sh"
